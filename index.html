@@ -1,18 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>FCC Challenge - Twitch TV</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-</head>
-<body>
-	<div class="container">
-	
-		<h1>Twitch TV</h1>
-	
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="src/script.js"></script>
-	</div>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<title>FCC Challenge - Twitch TV</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://bootswatch.com/4/materia/bootstrap.min.css">
+		<link rel="stylesheet" href="src/style.css">
+	</head>
+	<body>
+		<div class="container py-5">
+
+			<h1 class="mb-3">Twitch TV</h1>
+			<div class="box card">
+
+				<div class="card-body">
+					<div class="row">
+						<div class="col-xs-12 col-md-3">
+							
+							<nav id="tabs" class="nav nav-pills nav-fill mb-3" role="tablist">
+								<a id="tab-all" class="nav-item nav-link active" href="#nav-all" data-toggle="pill" rote="tab" aria-selected="true">All</a>
+								<a id="tab-online" class="nav-item nav-link" href="#nav-online" data-toggle="pill" rote="tab" aria-selected="false">Online</a>
+								<a id="tab-offline" class="nav-item nav-link" href="#nav-offline" data-toggle="pill" rote="tab" aria-selected="false">Offline</a>
+							</nav>
+							<div id="content" class="tab-content">
+								<div id="nav-all" class="tab-pane fade show active" role="tabpanel">
+									<!-- content all -->
+									<div class="list-group">
+										<!--
+										<a class="list-group-item list-group-item-action online" href=""><img class="thumb" src="" alt=""> Free Code Camp</a>
+										<a class="list-group-item list-group-item-action online" href=""><img class="thumb" src="" alt=""> AOV</a>
+										<a class="list-group-item list-group-item-action offline" href=""><img class="thumb" src="" alt=""> Ninja C0de</a>
+										<a class="list-group-item list-group-item-action online" href=""><img class="thumb" src="" alt=""> Free Code Camp</a>
+										<a class="list-group-item list-group-item-action online" href=""><img class="thumb" src="" alt=""> AOV</a>
+										-->
+									</div>
+								</div>
+								<div id="nav-online" class="tab-pane fade" role="tabpanel">
+									<!-- content online -->
+									<div class="list-group">
+										<!--
+										<a class="list-group-item list-group-item-action online" href=""><img class="thumb" src="" alt=""> Free Code Camp</a>
+										<a class="list-group-item list-group-item-action online" href=""><img class="thumb" src="" alt=""> AOV</a>
+										-->
+									</div>
+								</div>
+								<div id="nav-offline" class="tab-pane fade" role="tabpanel">
+									<!-- content offline -->
+									<div class="list-group">
+										<!--
+										<a class="list-group-item list-group-item-action offline" href=""><img class="thumb" src="" alt=""> Ninja C0de</a>
+										-->
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-md-9">
+						
+							<!-- details here -->
+						
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+			<script src="src/script.js"></script>
+		</div>
+	</body>
 </html>
